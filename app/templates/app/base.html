@@ -12,8 +12,11 @@
   <div>
 
     <a href="/">ホーム</a>
-    <a href="{% url 'profile' %}">プロフィール</a>
-    
+    {% if user.is_authenticated %}
+      <a href="{% url 'profile' %}">プロフィール</a>
+    {% else %}
+      <a href="{% url 'account_login' %}">ログイン</a>
+    {% endif %}
   </div>
   <div>
     {% block content %}
