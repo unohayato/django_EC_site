@@ -8,19 +8,19 @@
     <tbody>
       <tr>
         <th>名前</th>
-        <td>xxx</td>
+        <td>{{ user_data.first_name }} {{ user_data.last_name }}</td>
       </tr>
       <tr>
         <th>メールアドレス</th>
-        <td>xxx</td>
+        <td>{{ user_data.email }}</td>
       </tr>
       <tr>
         <th>所属</th>
-        <td>xxx</td>
+        <td>{{ user_data.department }}</td>
       </tr>
       <tr>
         <th>入会日</th>
-        <td>xxx</td>
+        <td>{{ user_data.created }}</td>
       </tr>
     </tbody>
   </table>
