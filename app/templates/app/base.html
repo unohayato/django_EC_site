@@ -16,6 +16,7 @@
       <a href="{% url 'profile' %}">プロフィール</a>
       <a href="{% url 'account_logout' %}">ログアウト</a>
     {% else %}
+      <a href="{% url 'account_signup' %}">サインアップ</a>
       <a href="{% url 'account_login' %}">ログイン</a>
     {% endif %}
   </div>
